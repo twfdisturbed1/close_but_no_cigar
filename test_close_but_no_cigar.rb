@@ -15,4 +15,10 @@ class TestCigar < Minitest::Test
 	def testing_if_one_match_returns_three
     	assert_equal(3, cigar("1235", "0235"))
     end
+    def testing_if_my_ticket_equals_winning_ticket
+    	assert_equal([4,2,2], cigarr(["1234", "1222", "1245"], "1234"))
+    end
+    def test_if_losing_ticket_equals_winning_ticket
+    	assert_equal([4,3], losing_ticket(["1234", "1233"], "1234"))
+    end
 end
