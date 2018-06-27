@@ -9,5 +9,7 @@ class TestCigar < Minitest::Test
     def test_if_function_has_string
     	assert_equal(Integer, cigar("", "").class)
     end
-        
+    def testing_if_one_match_returns_one
+    	assert_equal(1, cigar("1234", "4567"))
+    end        
 end
