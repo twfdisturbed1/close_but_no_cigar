@@ -15,12 +15,13 @@ def cigarr(my_ticket_array, winning_ticket)
     my_ticket_array.each do |ticket|
              ret << cigar(ticket, winning_ticket)
     end	
-ret
+    ret
 end
-    def losing_ticket(other, winning_ticket) 
+
+def losing_ticket(other, winning_ticket) 
     ret =[]
     other.each do |ticket|
         ret << cigar(ticket, winning_ticket)
     end
-ret
+    ret
 end
