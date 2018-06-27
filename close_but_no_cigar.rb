@@ -10,10 +10,17 @@ def cigar(number,winning_number)
 	counter
 end
 
-def cigar(my_ticket_array, winning_ticket)
+def cigarr(my_ticket_array, winning_ticket)
     ret = []
     my_ticket_array.each do |ticket|
              ret << cigar(ticket, winning_ticket)
-end	
+    end	
+ret
+end
+    def losing_ticket(other, winning_ticket) 
+    ret =[]
+    other.each do |ticket|
+        ret << cigar(ticket, winning_ticket)
+    end
 ret
 end
